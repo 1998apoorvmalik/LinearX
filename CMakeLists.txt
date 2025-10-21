@@ -30,6 +30,8 @@ add_compile_options(
     -march=native
     -flto
     -ffast-math
+    -mllvm
+    -inline-threshold=1000
     # -fno-rtti
     -fno-math-errno
     -funroll-loops
